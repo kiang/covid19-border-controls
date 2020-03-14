@@ -29,11 +29,12 @@ var getWorldStyle = function(f) {
   return theStyle;
 }
 
+var worldSource = new ol.source.Vector({
+  url: 'json/world.json',
+  format: new ol.format.GeoJSON()
+});
 var world = new ol.layer.Vector({
-  source: new ol.source.Vector({
-    url: 'json/world.json',
-    format: new ol.format.GeoJSON()
-  }),
+  source: worldSource,
   style: getWorldStyle
 });
 var map = new ol.Map({
@@ -43,6 +44,10 @@ var map = new ol.Map({
 });
 
 var pointClicked = false;
+var dataPool = false;
+$.getJSON('json/data.json', {}, function(d) {
+  dataPool = d;
+});
 map.addControl(sidebar);
 map.on('singleclick', function(evt) {
   var message = '';
@@ -51,11 +56,18 @@ map.on('singleclick', function(evt) {
     if(false === pointClicked) {
       pointClicked = true;
       var p = feature.getProperties();
+      p.adm0_a3;
       sidebarTitle.html(p.name);
       message += '<table class="table table-dark">';
       message += '<tbody>';
       message += '<tr><th scope="row">Name</th><td>' + p.name + '</td></tr>';
       message += '<tr><th scope="row">Region</th><td>' + p.subregion + '</td></tr>';
+      worldSource.forEachFeature(function(wf) {
+        var wp = wf.getProperties();
+        if(dataPool[p.adm0_a3][wp.adm0_a3]) {
+          message += '<tr><th scope="row">' + wp.adm0_a3 + '</th><td>' + dataPool[p.adm0_a3][wp.adm0_a3] + '</td></tr>';
+        }
+      });
       message += '</tbody></table>';
     }
   });
