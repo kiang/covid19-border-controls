@@ -119,10 +119,15 @@ var selectFeature = function(feature) {
   message += '<tbody>';
   message += '<tr><th scope="row">Name</th><td>' + p.name + '</td></tr>';
   message += '<tr><th scope="row">Region</th><td>' + p.subregion + '</td></tr>';
+  message += '</tbody></table><p>&nbsp;</p>';
+  message += '<table class="table">';
+  message += '<tbody>';
+  message += '<tr><th scope="row" colspan="2">Border Status</th></tr>';
   worldSource.forEachFeature(function(wf) {
     var wp = wf.getProperties();
     if(dataPool[p.adm0_a3][wp.adm0_a3]) {
-      message += '<tr><th scope="row">' + country[wp.adm0_a3].name + '</th><td>' + dataPool[p.adm0_a3][wp.adm0_a3] + '</td></tr>';
+      message += '<tr><th scope="row"><a href="#" class="country-border" data-code="' + wp.adm0_a3 + '">' + country[wp.adm0_a3].name + '</a></th>'
+      message += '<td><a href="#" class="country-border" data-code="' + wp.adm0_a3 + '">' + dataPool[p.adm0_a3][wp.adm0_a3] + '</a></td></tr>';
       if(false === ex) {
         ex = countryFeatures[wp.adm0_a3].getGeometry().getExtent();
       } else {
@@ -134,6 +139,13 @@ var selectFeature = function(feature) {
   message += '</tbody></table>';
   worldSource.refresh();
   content.html(message);
+  $('a.country-border', content).click(function(e) {
+    var clickedCode = $(this).attr('data-code');
+    appView.fit(countryFeatures[clickedCode].getGeometry());
+    $('#countryDetails').html('Details');
+    sidebar.open('book');
+    e.preventDefault();
+  });
   sidebar.open('home');
 
   appView.fit(ex);
