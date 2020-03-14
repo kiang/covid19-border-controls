@@ -42,18 +42,27 @@ var map = new ol.Map({
   view: appView
 });
 
-var lastFeature = false;
+var pointClicked = false;
 map.addControl(sidebar);
 map.on('singleclick', function(evt) {
   var message = '';
+  pointClicked = false;
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
-    var p = feature.getProperties();
-    console.log(p);
+    if(false === pointClicked) {
+      pointClicked = true;
+      var p = feature.getProperties();
+      sidebarTitle.html(p.name);
+      message += '<table class="table table-dark">';
+      message += '<tbody>';
+      message += '<tr><th scope="row">Name</th><td>' + p.name + '</td></tr>';
+      message += '<tr><th scope="row">Region</th><td>' + p.subregion + '</td></tr>';
+      message += '</tbody></table>';
+    }
   });
-  content.innerHTML = message;
+  content.html(message);
   sidebar.open('home');
 });
 
 
-var sidebarTitle = document.getElementById('sidebarTitle');
-var content = document.getElementById('sidebarContent');
+var sidebarTitle = $('#sidebarTitle');
+var content = $('#sidebarContent');
