@@ -111,6 +111,7 @@ map.once('rendercomplete', function(event) {
 var countryFeatures = {};
 var selectFeature = function(feature) {
   var p = feature.getProperties();
+  var ex = false;
   var message = '';
   clickedCountry = p.adm0_a3;
   sidebarTitle.html(p.name);
@@ -122,12 +123,21 @@ var selectFeature = function(feature) {
     var wp = wf.getProperties();
     if(dataPool[p.adm0_a3][wp.adm0_a3]) {
       message += '<tr><th scope="row">' + country[wp.adm0_a3].name + '</th><td>' + dataPool[p.adm0_a3][wp.adm0_a3] + '</td></tr>';
+      if(false === ex) {
+        ex = countryFeatures[wp.adm0_a3].getGeometry().getExtent();
+      } else {
+        ol.extent.extend(ex, countryFeatures[wp.adm0_a3].getGeometry().getExtent());
+      }
     }
   });
+  appView.fit(ex);
   message += '</tbody></table>';
   worldSource.refresh();
   content.html(message);
   sidebar.open('home');
+
+  appView.fit(ex);
+  appView.setCenter(ol.extent.getCenter(feature.getGeometry().getExtent()));
 }
 
 var sidebarTitle = $('#sidebarTitle');
