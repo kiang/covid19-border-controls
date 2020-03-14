@@ -76,40 +76,59 @@ var pointClicked = false;
 var dataPool = false;
 var country = {};
 var clickedCountry = '';
+var findTerms = [];
 $.getJSON('json/data.json', {}, function(d) {
   dataPool = d;
 });
 map.addControl(sidebar);
 map.on('singleclick', function(evt) {
-  var message = '';
   pointClicked = false;
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
     if(false === pointClicked) {
       pointClicked = true;
-      var p = feature.getProperties();
-      clickedCountry = p.adm0_a3;
-      sidebarTitle.html(p.name);
-      message += '<table class="table table-dark">';
-      message += '<tbody>';
-      message += '<tr><th scope="row">Name</th><td>' + p.name + '</td></tr>';
-      message += '<tr><th scope="row">Region</th><td>' + p.subregion + '</td></tr>';
-      worldSource.forEachFeature(function(wf) {
-        var wp = wf.getProperties();
-        if(!country[wp.adm0_a3]) {
-          country[wp.adm0_a3] = wp;
-        }
-        if(dataPool[p.adm0_a3][wp.adm0_a3]) {
-          message += '<tr><th scope="row">' + country[wp.adm0_a3].name + '</th><td>' + dataPool[p.adm0_a3][wp.adm0_a3] + '</td></tr>';
-        }
-      });
-      message += '</tbody></table>';
+      selectFeature(feature);
     }
   });
+});
+map.once('rendercomplete', function(event) {
+  worldSource.forEachFeature(function(wf) {
+    var wp = wf.getProperties();
+    country[wp.adm0_a3] = wp;
+    countryFeatures[wp.adm0_a3] = wf;
+    findTerms.push({
+      value: wp.adm0_a3,
+      label: '[' + wp.adm0_a3 + '] ' + wp.name
+    });
+  });
+  $('#findPoint').autocomplete({
+    source: findTerms,
+    select: function(event, ui) {
+      selectFeature(countryFeatures[ui.item.value]);
+    }
+  });
+});
+
+var countryFeatures = {};
+var selectFeature = function(feature) {
+  var p = feature.getProperties();
+  var message = '';
+  clickedCountry = p.adm0_a3;
+  sidebarTitle.html(p.name);
+  message += '<table class="table table-dark">';
+  message += '<tbody>';
+  message += '<tr><th scope="row">Name</th><td>' + p.name + '</td></tr>';
+  message += '<tr><th scope="row">Region</th><td>' + p.subregion + '</td></tr>';
+  worldSource.forEachFeature(function(wf) {
+    var wp = wf.getProperties();
+    if(dataPool[p.adm0_a3][wp.adm0_a3]) {
+      message += '<tr><th scope="row">' + country[wp.adm0_a3].name + '</th><td>' + dataPool[p.adm0_a3][wp.adm0_a3] + '</td></tr>';
+    }
+  });
+  message += '</tbody></table>';
   worldSource.refresh();
   content.html(message);
   sidebar.open('home');
-});
-
+}
 
 var sidebarTitle = $('#sidebarTitle');
 var content = $('#sidebarContent');
