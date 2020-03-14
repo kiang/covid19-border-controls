@@ -29,7 +29,7 @@ var worldColors = {
   }), //yellow
   'selected': new ol.style.Fill({
     color: 'rgba(0,255,0,1)'
-  }), //yellow
+  }), //green
 };
 var worldStrokes = {
   'default': new ol.style.Stroke({
