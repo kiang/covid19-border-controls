@@ -3,14 +3,10 @@ var sidebar = new ol.control.Sidebar({ element: 'sidebar', position: 'right' });
 
 var appView = new ol.View({
   center: ol.proj.fromLonLat([120.9820179, 23.9739374]),
-  zoom: 5
+  zoom: 4
 });
 
 var worldStyle = new ol.style.Style({
-  stroke: new ol.style.Stroke({
-    color: 'rgba(37,67,140,0.5)',
-    width: 1
-  }),
   text: new ol.style.Text({
     font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
     fill: new ol.style.Fill({
@@ -18,13 +14,46 @@ var worldStyle = new ol.style.Style({
     })
   }),
   fill: new ol.style.Fill({
-    color: 'rgba(255,255,255,0.1)'
+    color: 'rgba(255,255,255,1)'
   })
 });
+var worldColors = {
+  'restricted': new ol.style.Fill({
+    color: 'rgba(255,0,0,1)'
+  }), //red
+  'quarantine': new ol.style.Fill({
+    color: 'rgba(255,192,203,1)'
+  }), //pink
+  'advisory': new ol.style.Fill({
+    color: 'rgba(255,255,0,1)'
+  }), //yellow
+  'selected': new ol.style.Fill({
+    color: 'rgba(0,255,0,1)'
+  }), //yellow
+};
+var worldStrokes = {
+  'default': new ol.style.Stroke({
+    color: 'rgba(37,67,140,0.5)',
+    width: 1
+  }),
+  'selected': new ol.style.Stroke({
+    color: 'rgba(0,0,255,1)',
+    width: 3
+  }),
+}
 
 var getWorldStyle = function(f) {
   var p = f.getProperties();
   var theStyle = worldStyle.clone();
+  if(clickedCountry === p.adm0_a3) {
+    theStyle.setFill(worldColors['selected']);
+    theStyle.setStroke(worldStrokes['selected']);
+  } else if(dataPool[clickedCountry] && dataPool[clickedCountry][p.adm0_a3]) {
+    theStyle.setFill(worldColors[dataPool[clickedCountry][p.adm0_a3]]);
+    theStyle.setStroke(worldStrokes['default']);
+  } else {
+    theStyle.setStroke(worldStrokes['default']);
+  }
   theStyle.getText().setText(p.admin);
   return theStyle;
 }
@@ -45,6 +74,8 @@ var map = new ol.Map({
 
 var pointClicked = false;
 var dataPool = false;
+var country = {};
+var clickedCountry = '';
 $.getJSON('json/data.json', {}, function(d) {
   dataPool = d;
 });
@@ -56,7 +87,7 @@ map.on('singleclick', function(evt) {
     if(false === pointClicked) {
       pointClicked = true;
       var p = feature.getProperties();
-      p.adm0_a3;
+      clickedCountry = p.adm0_a3;
       sidebarTitle.html(p.name);
       message += '<table class="table table-dark">';
       message += '<tbody>';
@@ -64,13 +95,17 @@ map.on('singleclick', function(evt) {
       message += '<tr><th scope="row">Region</th><td>' + p.subregion + '</td></tr>';
       worldSource.forEachFeature(function(wf) {
         var wp = wf.getProperties();
+        if(!country[wp.adm0_a3]) {
+          country[wp.adm0_a3] = wp;
+        }
         if(dataPool[p.adm0_a3][wp.adm0_a3]) {
-          message += '<tr><th scope="row">' + wp.adm0_a3 + '</th><td>' + dataPool[p.adm0_a3][wp.adm0_a3] + '</td></tr>';
+          message += '<tr><th scope="row">' + country[wp.adm0_a3].name + '</th><td>' + dataPool[p.adm0_a3][wp.adm0_a3] + '</td></tr>';
         }
       });
       message += '</tbody></table>';
     }
   });
+  worldSource.refresh();
   content.html(message);
   sidebar.open('home');
 });
