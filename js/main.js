@@ -111,7 +111,6 @@ map.once('rendercomplete', function(event) {
 var countryFeatures = {};
 var selectFeature = function(feature) {
   var p = feature.getProperties();
-  var ex = false;
   var message = '';
   clickedCountry = p.iso_a2;
   sidebarTitle.html(p.name);
@@ -128,28 +127,27 @@ var selectFeature = function(feature) {
     if(dataPool[p.iso_a2][wp.iso_a2]) {
       message += '<tr><th scope="row"><a href="#" class="country-border" data-code="' + wp.iso_a2 + '">' + country[wp.iso_a2].name + '</a></th>'
       message += '<td><a href="#" class="country-border" data-code="' + wp.iso_a2 + '">' + dataPool[p.iso_a2][wp.iso_a2].type + '</a></td></tr>';
-      if(false === ex) {
-        ex = countryFeatures[wp.iso_a2].getGeometry().getExtent();
-      } else {
-        ol.extent.extend(ex, countryFeatures[wp.iso_a2].getGeometry().getExtent());
-      }
     }
   });
-  appView.fit(ex);
   message += '</tbody></table>';
   worldSource.refresh();
   content.html(message);
   $('a.country-border', content).click(function(e) {
     var clickedCode = $(this).attr('data-code');
-    appView.fit(countryFeatures[clickedCode].getGeometry());
-    $('#countryDetails').html('Details');
+    var message = '';
+    if(dataPool[clickedCountry] && dataPool[clickedCountry][clickedCode]) {
+      message += '<table class="table table-dark">';
+      message += '<tbody>';
+      for(k in dataPool[clickedCountry][clickedCode]) {
+        message += '<tr><th scope="row">' + k + '</th><td>' + dataPool[clickedCountry][clickedCode][k] + '</td></tr>';
+      }
+      message += '</tbody></table>';
+    }
+    $('#countryDetails').html(message);
     sidebar.open('book');
     e.preventDefault();
   });
   sidebar.open('home');
-
-  appView.fit(ex);
-  appView.setCenter(ol.extent.getCenter(feature.getGeometry().getExtent()));
 }
 
 var sidebarTitle = $('#sidebarTitle');
