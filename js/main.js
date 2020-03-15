@@ -45,11 +45,11 @@ var worldStrokes = {
 var getWorldStyle = function(f) {
   var p = f.getProperties();
   var theStyle = worldStyle.clone();
-  if(clickedCountry === p.iso_a2) {
+  if(clickedCountry === p.ISO_A2) {
     theStyle.setFill(worldColors['selected']);
     theStyle.setStroke(worldStrokes['selected']);
-  } else if(dataPool[clickedCountry] && dataPool[clickedCountry][p.iso_a2]) {
-    theStyle.setFill(worldColors[dataPool[clickedCountry][p.iso_a2].type]);
+  } else if(dataPool[clickedCountry] && dataPool[clickedCountry][p.ISO_A2]) {
+    theStyle.setFill(worldColors[dataPool[clickedCountry][p.ISO_A2].type]);
     theStyle.setStroke(worldStrokes['default']);
   } else {
     theStyle.setStroke(worldStrokes['default']);
@@ -93,11 +93,11 @@ map.on('singleclick', function(evt) {
 map.once('rendercomplete', function(event) {
   worldSource.forEachFeature(function(wf) {
     var wp = wf.getProperties();
-    country[wp.iso_a2] = wp;
-    countryFeatures[wp.iso_a2] = wf;
+    country[wp.ISO_A2] = wp;
+    countryFeatures[wp.ISO_A2] = wf;
     findTerms.push({
-      value: wp.iso_a2,
-      label: '[' + wp.iso_a2 + '] ' + wp.name
+      value: wp.ISO_A2,
+      label: '[' + wp.ISO_A2 + '] ' + wp.name
     });
   });
   $('#findPoint').autocomplete({
@@ -112,21 +112,21 @@ var countryFeatures = {};
 var selectFeature = function(feature) {
   var p = feature.getProperties();
   var message = '';
-  clickedCountry = p.iso_a2;
-  sidebarTitle.html(p.name);
+  clickedCountry = p.ISO_A2;
+  sidebarTitle.html(p.NAME);
   message += '<table class="table table-dark">';
   message += '<tbody>';
-  message += '<tr><th scope="row">Name</th><td>' + p.name + '</td></tr>';
-  message += '<tr><th scope="row">Region</th><td>' + p.subregion + '</td></tr>';
+  message += '<tr><th scope="row">Name</th><td>' + p.NAME + '</td></tr>';
+  message += '<tr><th scope="row">Region</th><td>' + p.SUBREGION + '</td></tr>';
   message += '</tbody></table><p>&nbsp;</p>';
   message += '<table class="table">';
   message += '<tbody>';
   message += '<tr><th scope="row" colspan="2">Border Status</th></tr>';
   worldSource.forEachFeature(function(wf) {
     var wp = wf.getProperties();
-    if(dataPool[p.iso_a2][wp.iso_a2]) {
-      message += '<tr><th scope="row"><a href="#" class="country-border" data-code="' + wp.iso_a2 + '">' + country[wp.iso_a2].name + '</a></th>'
-      message += '<td><a href="#" class="country-border" data-code="' + wp.iso_a2 + '">' + dataPool[p.iso_a2][wp.iso_a2].type + '</a></td></tr>';
+    if(dataPool[p.ISO_A2] && dataPool[p.ISO_A2][wp.ISO_A2]) {
+      message += '<tr><th scope="row"><a href="#" class="country-border" data-code="' + wp.ISO_A2 + '">' + country[wp.ISO_A2].NAME + '</a></th>'
+      message += '<td><a href="#" class="country-border" data-code="' + wp.ISO_A2 + '">' + dataPool[p.ISO_A2][wp.ISO_A2].type + '</a></td></tr>';
     }
   });
   message += '</tbody></table>';

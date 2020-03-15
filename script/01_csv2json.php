@@ -3,7 +3,7 @@ $basePath = dirname(__DIR__);
 $json = json_decode(file_get_contents($basePath . '/json/world.json'), true);
 $pool = array();
 foreach($json['features'] AS $f) {
-    $pool[$f['properties']['iso_a2']] = array();
+    $pool[$f['properties']['ISO_A2']] = array();
 }
 
 $fh = fopen($basePath . '/data/data.csv', 'r');
