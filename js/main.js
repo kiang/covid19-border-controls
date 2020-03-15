@@ -45,11 +45,11 @@ var worldStrokes = {
 var getWorldStyle = function(f) {
   var p = f.getProperties();
   var theStyle = worldStyle.clone();
-  if(clickedCountry === p.adm0_a3) {
+  if(clickedCountry === p.iso_a2) {
     theStyle.setFill(worldColors['selected']);
     theStyle.setStroke(worldStrokes['selected']);
-  } else if(dataPool[clickedCountry] && dataPool[clickedCountry][p.adm0_a3]) {
-    theStyle.setFill(worldColors[dataPool[clickedCountry][p.adm0_a3]]);
+  } else if(dataPool[clickedCountry] && dataPool[clickedCountry][p.iso_a2]) {
+    theStyle.setFill(worldColors[dataPool[clickedCountry][p.iso_a2].type]);
     theStyle.setStroke(worldStrokes['default']);
   } else {
     theStyle.setStroke(worldStrokes['default']);
@@ -93,11 +93,11 @@ map.on('singleclick', function(evt) {
 map.once('rendercomplete', function(event) {
   worldSource.forEachFeature(function(wf) {
     var wp = wf.getProperties();
-    country[wp.adm0_a3] = wp;
-    countryFeatures[wp.adm0_a3] = wf;
+    country[wp.iso_a2] = wp;
+    countryFeatures[wp.iso_a2] = wf;
     findTerms.push({
-      value: wp.adm0_a3,
-      label: '[' + wp.adm0_a3 + '] ' + wp.name
+      value: wp.iso_a2,
+      label: '[' + wp.iso_a2 + '] ' + wp.name
     });
   });
   $('#findPoint').autocomplete({
@@ -113,7 +113,7 @@ var selectFeature = function(feature) {
   var p = feature.getProperties();
   var ex = false;
   var message = '';
-  clickedCountry = p.adm0_a3;
+  clickedCountry = p.iso_a2;
   sidebarTitle.html(p.name);
   message += '<table class="table table-dark">';
   message += '<tbody>';
@@ -125,13 +125,13 @@ var selectFeature = function(feature) {
   message += '<tr><th scope="row" colspan="2">Border Status</th></tr>';
   worldSource.forEachFeature(function(wf) {
     var wp = wf.getProperties();
-    if(dataPool[p.adm0_a3][wp.adm0_a3]) {
-      message += '<tr><th scope="row"><a href="#" class="country-border" data-code="' + wp.adm0_a3 + '">' + country[wp.adm0_a3].name + '</a></th>'
-      message += '<td><a href="#" class="country-border" data-code="' + wp.adm0_a3 + '">' + dataPool[p.adm0_a3][wp.adm0_a3] + '</a></td></tr>';
+    if(dataPool[p.iso_a2][wp.iso_a2]) {
+      message += '<tr><th scope="row"><a href="#" class="country-border" data-code="' + wp.iso_a2 + '">' + country[wp.iso_a2].name + '</a></th>'
+      message += '<td><a href="#" class="country-border" data-code="' + wp.iso_a2 + '">' + dataPool[p.iso_a2][wp.iso_a2].type + '</a></td></tr>';
       if(false === ex) {
-        ex = countryFeatures[wp.adm0_a3].getGeometry().getExtent();
+        ex = countryFeatures[wp.iso_a2].getGeometry().getExtent();
       } else {
-        ol.extent.extend(ex, countryFeatures[wp.adm0_a3].getGeometry().getExtent());
+        ol.extent.extend(ex, countryFeatures[wp.iso_a2].getGeometry().getExtent());
       }
     }
   });

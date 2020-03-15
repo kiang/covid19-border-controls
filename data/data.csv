@@ -1,3 +1,4 @@
+homeCountry,homeCountryCode,targetCountry,targetCountryCode,type,source,sourceUrl,startDate,endDate,titleZh-TW,descriptionZh-TW,titleEn,descriptionEn,titleJp,descriptionJp,titleKr,descriptionKr
 "Home Country
 本國","Home 
 Country Code
@@ -17,15 +18,14 @@ English","
 日本語","
 詳細
 日本語",키 포인트,세부
-homeCountry,homeCountryCode,targetCountries,targetCountryCode,type,source,sourceUrl,startDate,endDate,titleZh,descriptionZh,titleEn,descriptionEn,titleJp,descriptionJp,titleKr,descriptionKr
 ,(ISO 3166-1 alpha-2),,(ISO 3166-1 alpha-2),"警示= advisory
 不淮入境= restricted
 需要自主隔離=quarantine
 
 * 會再更改
 (TO BE revised)",,,,,"精簡並採用類近格式
-3行以內",精簡並採用類近格式,,,,,,
-台灣 Taiwan,TW,香港,HK,restricted,衛生福利部疾病管制署,,2020/2/7,,"國民：第三級警告（非必要勿前往）
+3行以內",精簡並採用類近格式,In 3 lines,,,,,
+台灣 Taiwan,TW,香港,HK,restricted,衛生福利部疾病管制署,,2020/02/07,,"國民：第三級警告（非必要勿前往）
 轉機得入境者，需居家檢疫14天：部分機場暫停航班
 14日內曾經入境或居住於香的外籍人士：暫緩入境","國民：第三級警告（非必要勿前往）
 外籍人士只要14日內曾經入境或居住於香港，暫緩入境我國。
@@ -35,28 +35,29 @@ homeCountry,homeCountryCode,targetCountries,targetCountryCode,type,source,source
 轉機入境臺灣者：14日的「居家檢疫」",,,,,,
 台灣 Taiwan,TW,中國 China,CN,restricted,衛生福利部疾病管制署,,,,"
 中國大陸(含港澳)列第三級警告",,,,,,,
-台灣 Taiwan,TW,伊朗,IR,restricted,衛生福利部疾病管制署,https://www.roc-taiwan.org/us/post/7986.html,2020/3/2,,國民：第三級警告，非必要勿前往,"國民：第三級警告（非必要勿前往）
+台灣 Taiwan,TW,伊朗,IR,restricted,衛生福利部疾病管制署,https://www.roc-taiwan.org/us/post/7986.html,2020/03/02,,國民：第三級警告，非必要勿前往,"國民：第三級警告（非必要勿前往）
 14天內有該國旅遊史者(不含轉機)，入境後需居家檢疫14天。
 
 指揮中心指出，伊朗確定病例數已達593例，43例死亡，為中國以外死亡病例數最多之國家，評估已有社區傳播；該國已輸出上百例病例至全球17國。
 
 因應國際武漢肺炎疫情發展，指揮中心目前已將中國大陸(含港澳)、韓國、義大利、伊朗列為旅遊疫情建議第三級警告；日本、新加坡列第二級警示；泰國列第一級注意。指揮中心將嚴密監控疫情變化，隨時調整防治策略及旅遊疫情建議等級。",,,,,,
-台灣 Taiwan,TW,意大利 Italy,IT,advisory,衛生福利部疾病管制署,https://www.roc-taiwan.org/us/post/7986.html,2020/3/2,,國民：第三級警告，非必要勿前往,"義大利旅遊疫情升至第三級警告（非必要勿前往），入境需居家檢疫14天
+台灣 Taiwan,TW,意大利 Italy,IT,advisory,衛生福利部疾病管制署,https://www.roc-taiwan.org/us/post/7986.html,2020/03/02,,國民：第三級警告，非必要勿前往,"義大利旅遊疫情升至第三級警告（非必要勿前往），入境需居家檢疫14天
 中央流行疫情指揮中心今(27)日表示，義大利近期COVID-19(武漢肺炎)病例數及死亡病例快速增加，鑒於國人至當地感染的風險提高，指揮中心宣布今日起提升義大利旅遊疫情建議至第三級：警告(Warning)，提醒民眾非必要勿前往。此外，指揮中心亦同時宣布，自台灣時間2月28日零時起，所有旅客（包含外籍人士）自義大利入境（轉機除外），需進行14天居家檢疫。
 
 指揮中心指出，義大利目前確定病例數已達400例，12例死亡，病例擴及9個大區，且逾9成病例目前尚未釐清感染源，評估已有社區傳播，並已輸出病例至法國、北馬其頓、希臘、巴西、西班牙、瑞士、阿爾及利亞、克羅埃西亞、奧地利及德國共10國計18例。義大利已宣布對發生不明感染源個案之城市或地區採取停班停課、暫停公眾活動、限制交通等防治措施。
 ",,,,,,
-台灣 Taiwan,TW,日本,JP,advisory,,,2020/3/2,,第二級警示,,,,,,,
-台灣 Taiwan,TW,新加坡,SG,advisory,,,2020/3/2,,第二級警示,,,,,,,
-台灣 Taiwan,TW,泰國,TH,advisory,,,2020/3/2,,第一級注意,,,,,,,
-台灣 Taiwan,TW,韓國,KR,restricted,,,2020/3/2,,第三級警告（非必要勿前往）,,,,,,,
+台灣 Taiwan,TW,日本,JP,advisory,,,2020/03/02,,第二級警示,,,,,,,
+台灣 Taiwan,TW,新加坡,SG,advisory,,,2020/03/02,,第二級警示,,,,,,,
+台灣 Taiwan,TW,泰國,TH,advisory,,,2020/03/02,,第一級注意,,,,,,,
+台灣 Taiwan,TW,韓國,KR,restricted,,,2020/03/02,,第三級警告（非必要勿前往）,,,,,,,
+香港 Hong Kong,HK,韓國,KR,restricted,,,2020/03/02,,旅客：不得入境,,,,,,,
 日本,JP,香港 Hong Kong,HK,quarantine,,,,,"所有人士：只能由東京成田或大阪關西機場入境，並須接受14日強制檢疫，且不得乘搭交通工具
 港澳旅客暫時取消免簽證待遇",,,,,,,
 日本,JP,中國 China,CN,quarantine,日本厚生勞動省 檢疫所,https://www.mhlw.go.jp/content/10900000/000605166.pdf,,,所有人士：只能由東京成田或大阪關西機場入境，14日強制檢疫，且不得乘搭交通工具,,,,,,,
 日本,JP,韓國 Korea,KR,quarantine,日本厚生勞動省 檢疫所,https://www.mhlw.go.jp/content/10900000/000605166.pdf,,,所有人士：只能由東京成田或大阪關西機場入境，14日強制檢疫，且不得乘搭交通工具,,,,,,,
-新加坡,SG,中國 China,CN,restricted,ICA,https://www.ica.gov.sg/news-and-publications/public-education/updates-on-border-control-measures,2020/2/1,,"中华人民共和国护照持有者訪客：不准入境
+新加坡,SG,中國 China,CN,restricted,ICA,https://www.ica.gov.sg/news-and-publications/public-education/updates-on-border-control-measures,2020/02/01,,"中华人民共和国护照持有者訪客：不准入境
 新加坡居民和长期证持有者：居家通知",新加坡移民与关卡局从即日起，暂停签发新签证给中华人民共和国与伊朗护照持有者，之前签发的签证会暂时失效。给中华人民共和国护照持有者的免签证过境设施也会暂时失效。,,"With immediate effect, the issuance of all forms of new visas and previously issued visas to those with People's Republic of China (PRC) and Iranian passports have been suspended. Visa-free transit facility for those with PRC passports has also been suspended with immediate effect.",,,,
-新加坡,SG,法國 France,FR,restricted,ICA,https://www.ica.gov.sg/news-and-publications/public-education/updates-on-border-control-measures,2020/3/16,,訪客：不准入境,,,"visitors: Not Allowed
+新加坡,SG,法國 France,FR,restricted,ICA,https://www.ica.gov.sg/news-and-publications/public-education/updates-on-border-control-measures,2020/03/16,,訪客：不准入境,,,"visitors: Not Allowed
 Singapore residents and long-term pass holders: remain in their place of residence at all times for 14 days.",,,,
 新加坡,SG,德國 Germany,DE,restricted,ICA,https://www.ica.gov.sg/news-and-publications/public-education/updates-on-border-control-measures,,,,,,"visitors: Not Allowed
 Singapore residents and long-term pass holders: remain in their place of residence at all times for 14 days.",,,,
@@ -65,4 +66,19 @@ Singapore residents and long-term pass holders: remain in their place of residen
 新加坡,SG,西班牙Spain,ES,restricted,ICA,https://www.ica.gov.sg/news-and-publications/public-education/updates-on-border-control-measures,,,,,,"visitors: Not Allowed
 Singapore residents and long-term pass holders: remain in their place of residence at all times for 14 days.",,,,
 新加坡,SG,韓國 Korea,KR,quarantine,ICA,https://www.ica.gov.sg/news-and-publications/public-education/updates-on-border-control-measures,,,,,,Daegu city or Cheongdo county: Singapore residents and long-term pass holders:  remain in their place of residence at all times for 14 days. ,,,,
-新加坡,SG,,,,,,,,,,,,,,,
+Angola,AO,PRC,CN,restricted,IATA,https://www.iatatravelcentre.com/international-travel-document-news/1580226297.htm,2020/03/11,,,,,"1. Passengers and airline crew who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) are not allowed to enter Angola.
+- This does not apply to airline crew and nationals of Angola.
+2. Residents of Angola, airline crew and nationals of Angola who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) will be put in quarantine.
+3. A completed sanitary control sheet must be presented to the National Directorate of Public Health of the Ministry of Health upon arrival.",,,,
+Angola,AO,Iran,IR,restricted,IATA,https://www.iatatravelcentre.com/international-travel-document-news/1580226297.htm,2020/03/11,,,,,"1. Passengers and airline crew who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) are not allowed to enter Angola.
+- This does not apply to airline crew and nationals of Angola.
+2. Residents of Angola, airline crew and nationals of Angola who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) will be put in quarantine.
+3. A completed sanitary control sheet must be presented to the National Directorate of Public Health of the Ministry of Health upon arrival.",,,,
+Angola,AO,Italy,IT,restricted,IATA,https://www.iatatravelcentre.com/international-travel-document-news/1580226297.htm,2020/03/11,,,,,"1. Passengers and airline crew who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) are not allowed to enter Angola.
+- This does not apply to airline crew and nationals of Angola.
+2. Residents of Angola, airline crew and nationals of Angola who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) will be put in quarantine.
+3. A completed sanitary control sheet must be presented to the National Directorate of Public Health of the Ministry of Health upon arrival.",,,,
+Angola,AO,Korea,KR,restricted,IATA,https://www.iatatravelcentre.com/international-travel-document-news/1580226297.htm,2020/03/11,,,,,"1. Passengers and airline crew who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) are not allowed to enter Angola.
+- This does not apply to airline crew and nationals of Angola.
+2. Residents of Angola, airline crew and nationals of Angola who arrive from or have been in China (People's Rep.), Iran, Italy or Korea (Rep.) will be put in quarantine.
+3. A completed sanitary control sheet must be presented to the National Directorate of Public Health of the Ministry of Health upon arrival.",,,,
