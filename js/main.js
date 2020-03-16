@@ -54,7 +54,7 @@ var getWorldStyle = function(f) {
   } else {
     theStyle.setStroke(worldStrokes['default']);
   }
-  theStyle.getText().setText(p.admin);
+  theStyle.getText().setText(p.NAME);
   return theStyle;
 }
 
