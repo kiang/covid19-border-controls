@@ -11,6 +11,7 @@ file_put_contents($twJsonFile, file_get_contents('https://www.cdc.gov.tw/Country
 $bom = pack('H*','EFBBBF');
 $twJsonText = str_replace($bom, '', file_get_contents($twJsonFile));
 $twJson = json_decode($twJsonText, true);
+file_put_contents($twJsonFile, json_encode($twJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 foreach($twJson AS $alert) {
     if($alert['ISO3166'] === 'TW') {
         continue;
