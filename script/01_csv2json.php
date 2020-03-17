@@ -2,8 +2,70 @@
 $basePath = dirname(__DIR__);
 $json = json_decode(file_get_contents($basePath . '/json/world.json'), true);
 $pool = array();
+$nameCodes = array();
 foreach($json['features'] AS $f) {
     $pool[$f['properties']['ISO_A2']] = array();
+    $nameCodes[$f['properties']['NAME']] = $f['properties']['ISO_A2'];
+}
+
+$fh = fopen($basePath . '/data/country_epid_level_taiwan.csv', 'r');
+$nameCodeMap = array(
+    'Cape Verde' => 'CV',
+    'Central African Republic' => 'CF',
+    'Cote d\'Ivoire' => 'CI',
+    'Democratic Republic of the Congo' => 'CD',
+    'Eswatini' => 'SZ',
+    'Guinea' => 'GQ',
+    'Sudan' => 'SS',
+    'Dominican Republic' => 'DO',
+    'United States' => 'US',
+    'Korea, North' => 'KP',
+    'Korea, South' => 'KR',
+    'Lao PDR' => 'LA',
+    'Bosnia and Herzegovina' => 'BA',
+    'Czech Republic' => 'CZ',
+    'France' => 'FR',
+    'Norway' => 'NO',
+    'Marshall Islands' => 'MH',
+    'Solomon Islands' => 'SB',
+    'Falkland Islands' => 'FK',
+    'French Guiana' => 'GY',
+    'Kiribati' => 'KI',
+    'Western Sahara' => 'EH',
+);
+$header = fgetcsv($fh, 2048);
+while($line = fgetcsv($fh, 2048)) {
+    $data = array_combine($header, $line);
+    $data['code'] = false;
+    if(isset($nameCodeMap[$data['country']])) {
+        $data['code'] = $nameCodeMap[$data['country']];
+    } else {
+        foreach($nameCodes AS $name => $code) {
+            if(false === $data['code'] && false !== strpos($data['country'], $name)) {
+                $data['code'] = $code;
+            }
+        }    
+    }
+    $data['type'] = '';
+    switch($data['level']) {
+        case 1:
+            $data['type'] = 'advisory';
+        break;
+        case 2:
+            $data['type'] = 'quarantine';
+        break;
+        case 3:
+            $data['type'] = 'restricted';
+        break;
+    }
+    $pool['TW'][$data['code']] = array(
+        'homeCountryCode' => 'TW',
+        'targetCountry' => $data['country'],
+        'targetCountryCode' => $data['code'],
+        'type' => $data['type'],
+        'titleZh-TW' => $data['label'],
+        'descriptionZh-TW' => $data['note'],
+    );
 }
 
 $fh = fopen($basePath . '/data/data.csv', 'r');

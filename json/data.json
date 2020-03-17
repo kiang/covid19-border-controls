@@ -20,6 +20,7 @@
     "MW": [],
     "TZ": [],
     "SY": [],
+    "FR": [],
     "SR": [],
     "GY": [],
     "KR": [],
@@ -50,6 +51,7 @@
     "DE": [],
     "EE": [],
     "LV": [],
+    "NO": [],
     "SE": [],
     "FI": [],
     "VN": [],
@@ -273,24 +275,573 @@
     "BS": [],
     "TC": [],
     "TW": {
-        "HK": {
-            "homeCountry": "台灣 Taiwan",
+        "DZ": {
             "homeCountryCode": "TW",
-            "targetCountry": "香港",
-            "targetCountryCode": "HK",
+            "targetCountry": "Algeria",
+            "targetCountryCode": "DZ",
             "type": "restricted",
-            "source": "衛生福利部疾病管制署",
-            "sourceUrl": "",
-            "startDate": "2020\/02\/07",
-            "endDate": "",
-            "titleZh-TW": "國民：第三級警告（非必要勿前往）\n轉機得入境者，需居家檢疫14天：部分機場暫停航班\n14日內曾經入境或居住於香的外籍人士：暫緩入境",
-            "descriptionZh-TW": "國民：第三級警告（非必要勿前往）\n外籍人士只要14日內曾經入境或居住於香港，暫緩入境我國。\n即使有特殊原因，我駐外館處也不再受理簽證申請。\n持我國有效居留證而擬返臺的外籍人士：\n14日內曾經入境或居住於香港，返臺之後將限制居住，14日的「居家檢疫」\n轉機入境臺灣者：14日的「居家檢疫」",
-            "titleEn": "",
-            "descriptionEn": "",
-            "titleJp": "",
-            "descriptionJp": "",
-            "titleKr": "",
-            "descriptionKr": ""
+            "titleZh-TW": "阿爾及利亞",
+            "descriptionZh-TW": ""
+        },
+        "AO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Angola",
+            "targetCountryCode": "AO",
+            "type": "advisory",
+            "titleZh-TW": "安哥拉",
+            "descriptionZh-TW": ""
+        },
+        "EG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Egypt",
+            "targetCountryCode": "EG",
+            "type": "restricted",
+            "titleZh-TW": "埃及",
+            "descriptionZh-TW": ""
+        },
+        "LY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Libya",
+            "targetCountryCode": "LY",
+            "type": "restricted",
+            "titleZh-TW": "利比亞",
+            "descriptionZh-TW": ""
+        },
+        "MA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Morocco",
+            "targetCountryCode": "MA",
+            "type": "restricted",
+            "titleZh-TW": "摩洛哥",
+            "descriptionZh-TW": ""
+        },
+        "TN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Tunisia",
+            "targetCountryCode": "TN",
+            "type": "restricted",
+            "titleZh-TW": "突尼西亞",
+            "descriptionZh-TW": ""
+        },
+        "BJ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Benin",
+            "targetCountryCode": "BJ",
+            "type": "advisory",
+            "titleZh-TW": "貝南",
+            "descriptionZh-TW": ""
+        },
+        "BW": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Botswana",
+            "targetCountryCode": "BW",
+            "type": "advisory",
+            "titleZh-TW": "波札那",
+            "descriptionZh-TW": ""
+        },
+        "BF": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Burkina Faso",
+            "targetCountryCode": "BF",
+            "type": "advisory",
+            "titleZh-TW": "布吉納法索",
+            "descriptionZh-TW": ""
+        },
+        "BI": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Burundi",
+            "targetCountryCode": "BI",
+            "type": "advisory",
+            "titleZh-TW": "布隆迪",
+            "descriptionZh-TW": ""
+        },
+        "CM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Cameroon",
+            "targetCountryCode": "CM",
+            "type": "advisory",
+            "titleZh-TW": "喀麥隆",
+            "descriptionZh-TW": ""
+        },
+        "CV": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Cape Verde",
+            "targetCountryCode": "CV",
+            "type": "advisory",
+            "titleZh-TW": "維德角",
+            "descriptionZh-TW": ""
+        },
+        "CF": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Central African Republic",
+            "targetCountryCode": "CF",
+            "type": "advisory",
+            "titleZh-TW": "中非共和國",
+            "descriptionZh-TW": ""
+        },
+        "TD": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Chad",
+            "targetCountryCode": "TD",
+            "type": "advisory",
+            "titleZh-TW": "查德",
+            "descriptionZh-TW": ""
+        },
+        "KM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Comoros",
+            "targetCountryCode": "KM",
+            "type": "advisory",
+            "titleZh-TW": "葛摩",
+            "descriptionZh-TW": ""
+        },
+        "CG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Congo",
+            "targetCountryCode": "CG",
+            "type": "advisory",
+            "titleZh-TW": "剛果",
+            "descriptionZh-TW": ""
+        },
+        "CI": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Cote d'Ivoire",
+            "targetCountryCode": "CI",
+            "type": "advisory",
+            "titleZh-TW": "象牙海岸",
+            "descriptionZh-TW": ""
+        },
+        "CD": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Democratic Republic of the Congo",
+            "targetCountryCode": "CD",
+            "type": "advisory",
+            "titleZh-TW": "剛果民主共和國",
+            "descriptionZh-TW": ""
+        },
+        "DJ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Djibouti",
+            "targetCountryCode": "DJ",
+            "type": "advisory",
+            "titleZh-TW": "吉布地",
+            "descriptionZh-TW": ""
+        },
+        "GN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Papua New Guinea",
+            "targetCountryCode": "GN",
+            "type": "advisory",
+            "titleZh-TW": "巴布亞紐幾內亞",
+            "descriptionZh-TW": ""
+        },
+        "ER": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Eritrea",
+            "targetCountryCode": "ER",
+            "type": "advisory",
+            "titleZh-TW": "厄利垂亞",
+            "descriptionZh-TW": ""
+        },
+        "SZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Eswatini",
+            "targetCountryCode": "SZ",
+            "type": "advisory",
+            "titleZh-TW": "史瓦帝尼",
+            "descriptionZh-TW": ""
+        },
+        "ET": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Ethiopia",
+            "targetCountryCode": "ET",
+            "type": "advisory",
+            "titleZh-TW": "衣索比亞",
+            "descriptionZh-TW": ""
+        },
+        "GA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Gabon",
+            "targetCountryCode": "GA",
+            "type": "advisory",
+            "titleZh-TW": "加彭",
+            "descriptionZh-TW": ""
+        },
+        "GM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Gambia",
+            "targetCountryCode": "GM",
+            "type": "advisory",
+            "titleZh-TW": "甘比亞",
+            "descriptionZh-TW": ""
+        },
+        "GQ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Guinea",
+            "targetCountryCode": "GQ",
+            "type": "advisory",
+            "titleZh-TW": "幾內亞",
+            "descriptionZh-TW": ""
+        },
+        "KE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Kenya",
+            "targetCountryCode": "KE",
+            "type": "advisory",
+            "titleZh-TW": "肯亞",
+            "descriptionZh-TW": ""
+        },
+        "LS": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Lesotho",
+            "targetCountryCode": "LS",
+            "type": "advisory",
+            "titleZh-TW": "賴索托",
+            "descriptionZh-TW": ""
+        },
+        "LR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Liberia",
+            "targetCountryCode": "LR",
+            "type": "advisory",
+            "titleZh-TW": "賴比瑞亞",
+            "descriptionZh-TW": ""
+        },
+        "MG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Madagascar",
+            "targetCountryCode": "MG",
+            "type": "advisory",
+            "titleZh-TW": "馬達加斯加",
+            "descriptionZh-TW": ""
+        },
+        "MW": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Malawi",
+            "targetCountryCode": "MW",
+            "type": "advisory",
+            "titleZh-TW": "馬拉威",
+            "descriptionZh-TW": ""
+        },
+        "ML": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Mali",
+            "targetCountryCode": "ML",
+            "type": "advisory",
+            "titleZh-TW": "馬利",
+            "descriptionZh-TW": ""
+        },
+        "MR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Mauritania",
+            "targetCountryCode": "MR",
+            "type": "advisory",
+            "titleZh-TW": "茅利塔尼亞",
+            "descriptionZh-TW": ""
+        },
+        "MU": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Mauritius",
+            "targetCountryCode": "MU",
+            "type": "advisory",
+            "titleZh-TW": "模里西斯",
+            "descriptionZh-TW": ""
+        },
+        "MZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Mozambique",
+            "targetCountryCode": "MZ",
+            "type": "advisory",
+            "titleZh-TW": "莫三比克",
+            "descriptionZh-TW": ""
+        },
+        "NA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Namibia",
+            "targetCountryCode": "NA",
+            "type": "advisory",
+            "titleZh-TW": "納米比亞",
+            "descriptionZh-TW": ""
+        },
+        "NE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Niger",
+            "targetCountryCode": "NE",
+            "type": "advisory",
+            "titleZh-TW": "尼日",
+            "descriptionZh-TW": ""
+        },
+        "NG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Nigeria",
+            "targetCountryCode": "NG",
+            "type": "advisory",
+            "titleZh-TW": "奈及利亞",
+            "descriptionZh-TW": ""
+        },
+        "RW": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Rwanda",
+            "targetCountryCode": "RW",
+            "type": "advisory",
+            "titleZh-TW": "盧安達",
+            "descriptionZh-TW": ""
+        },
+        "SN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Senegal",
+            "targetCountryCode": "SN",
+            "type": "advisory",
+            "titleZh-TW": "塞內加爾",
+            "descriptionZh-TW": ""
+        },
+        "SL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Sierra Leone",
+            "targetCountryCode": "SL",
+            "type": "advisory",
+            "titleZh-TW": "獅子山",
+            "descriptionZh-TW": ""
+        },
+        "SO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Somalia",
+            "targetCountryCode": "SO",
+            "type": "advisory",
+            "titleZh-TW": "索馬利亞",
+            "descriptionZh-TW": ""
+        },
+        "ZA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "South Africa",
+            "targetCountryCode": "ZA",
+            "type": "advisory",
+            "titleZh-TW": "南非",
+            "descriptionZh-TW": ""
+        },
+        "SD": {
+            "homeCountryCode": "TW",
+            "targetCountry": "South Sudan",
+            "targetCountryCode": "SD",
+            "type": "advisory",
+            "titleZh-TW": "南蘇丹",
+            "descriptionZh-TW": ""
+        },
+        "SS": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Sudan",
+            "targetCountryCode": "SS",
+            "type": "advisory",
+            "titleZh-TW": "蘇丹",
+            "descriptionZh-TW": ""
+        },
+        "TZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Tanzania",
+            "targetCountryCode": "TZ",
+            "type": "advisory",
+            "titleZh-TW": "坦尚尼亞",
+            "descriptionZh-TW": ""
+        },
+        "TG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Togo",
+            "targetCountryCode": "TG",
+            "type": "advisory",
+            "titleZh-TW": "多哥",
+            "descriptionZh-TW": ""
+        },
+        "UG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Uganda",
+            "targetCountryCode": "UG",
+            "type": "advisory",
+            "titleZh-TW": "烏干達",
+            "descriptionZh-TW": ""
+        },
+        "ZM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Zambia",
+            "targetCountryCode": "ZM",
+            "type": "advisory",
+            "titleZh-TW": "尚比亞",
+            "descriptionZh-TW": ""
+        },
+        "ZW": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Zimbabwe",
+            "targetCountryCode": "ZW",
+            "type": "advisory",
+            "titleZh-TW": "辛巴威",
+            "descriptionZh-TW": ""
+        },
+        "BS": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Bahamas",
+            "targetCountryCode": "BS",
+            "type": "advisory",
+            "titleZh-TW": "巴哈馬",
+            "descriptionZh-TW": ""
+        },
+        "BB": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Barbados",
+            "targetCountryCode": "BB",
+            "type": "advisory",
+            "titleZh-TW": "巴貝多",
+            "descriptionZh-TW": ""
+        },
+        "BZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Belize",
+            "targetCountryCode": "BZ",
+            "type": "advisory",
+            "titleZh-TW": "貝里斯",
+            "descriptionZh-TW": ""
+        },
+        "CA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Canada",
+            "targetCountryCode": "CA",
+            "type": "advisory",
+            "titleZh-TW": "加拿大",
+            "descriptionZh-TW": ""
+        },
+        "CR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Costa Rica",
+            "targetCountryCode": "CR",
+            "type": "advisory",
+            "titleZh-TW": "哥斯大黎加",
+            "descriptionZh-TW": ""
+        },
+        "CU": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Cuba",
+            "targetCountryCode": "CU",
+            "type": "advisory",
+            "titleZh-TW": "古巴",
+            "descriptionZh-TW": ""
+        },
+        "DM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Dominica",
+            "targetCountryCode": "DM",
+            "type": "advisory",
+            "titleZh-TW": "多米尼克",
+            "descriptionZh-TW": ""
+        },
+        "DO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Dominican Republic",
+            "targetCountryCode": "DO",
+            "type": "advisory",
+            "titleZh-TW": "多明尼加共和國",
+            "descriptionZh-TW": ""
+        },
+        "SV": {
+            "homeCountryCode": "TW",
+            "targetCountry": "El Salvador",
+            "targetCountryCode": "SV",
+            "type": "advisory",
+            "titleZh-TW": "薩爾瓦多",
+            "descriptionZh-TW": ""
+        },
+        "GD": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Grenada",
+            "targetCountryCode": "GD",
+            "type": "advisory",
+            "titleZh-TW": "格瑞那達",
+            "descriptionZh-TW": ""
+        },
+        "GT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Guatemala",
+            "targetCountryCode": "GT",
+            "type": "advisory",
+            "titleZh-TW": "瓜地馬拉",
+            "descriptionZh-TW": ""
+        },
+        "HN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Honduras",
+            "targetCountryCode": "HN",
+            "type": "advisory",
+            "titleZh-TW": "宏都拉斯",
+            "descriptionZh-TW": ""
+        },
+        "JM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Jamaica",
+            "targetCountryCode": "JM",
+            "type": "advisory",
+            "titleZh-TW": "牙買加",
+            "descriptionZh-TW": ""
+        },
+        "MX": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Mexico",
+            "targetCountryCode": "MX",
+            "type": "advisory",
+            "titleZh-TW": "墨西哥",
+            "descriptionZh-TW": ""
+        },
+        "NI": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Nicaragua",
+            "targetCountryCode": "NI",
+            "type": "advisory",
+            "titleZh-TW": "尼加拉瓜",
+            "descriptionZh-TW": ""
+        },
+        "PA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Panama",
+            "targetCountryCode": "PA",
+            "type": "advisory",
+            "titleZh-TW": "巴拿馬",
+            "descriptionZh-TW": ""
+        },
+        "LC": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Saint Lucia",
+            "targetCountryCode": "LC",
+            "type": "advisory",
+            "titleZh-TW": "聖露西亞",
+            "descriptionZh-TW": ""
+        },
+        "TT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Trinidad and Tobago",
+            "targetCountryCode": "TT",
+            "type": "advisory",
+            "titleZh-TW": "千里達及托巴哥",
+            "descriptionZh-TW": ""
+        },
+        "US": {
+            "homeCountryCode": "TW",
+            "targetCountry": "United States",
+            "targetCountryCode": "US",
+            "type": "quarantine",
+            "titleZh-TW": "美國",
+            "descriptionZh-TW": "Only Washington, New York and California. The rest are grade 1."
+        },
+        "AM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Armenia",
+            "targetCountryCode": "AM",
+            "type": "restricted",
+            "titleZh-TW": "亞美尼亞",
+            "descriptionZh-TW": ""
+        },
+        "AZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Azerbaijan",
+            "targetCountryCode": "AZ",
+            "type": "restricted",
+            "titleZh-TW": "亞塞拜然",
+            "descriptionZh-TW": ""
         },
         "CN": {
             "homeCountry": "台灣 Taiwan",
@@ -311,37 +862,26 @@
             "titleKr": "",
             "descriptionKr": ""
         },
-        "IR": {
+        "GE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Georgia",
+            "targetCountryCode": "GE",
+            "type": "restricted",
+            "titleZh-TW": "喬治亞",
+            "descriptionZh-TW": ""
+        },
+        "HK": {
             "homeCountry": "台灣 Taiwan",
             "homeCountryCode": "TW",
-            "targetCountry": "伊朗",
-            "targetCountryCode": "IR",
+            "targetCountry": "香港",
+            "targetCountryCode": "HK",
             "type": "restricted",
             "source": "衛生福利部疾病管制署",
-            "sourceUrl": "https:\/\/www.roc-taiwan.org\/us\/post\/7986.html",
-            "startDate": "2020\/03\/02",
+            "sourceUrl": "",
+            "startDate": "2020\/02\/07",
             "endDate": "",
-            "titleZh-TW": "國民：第三級警告，非必要勿前往",
-            "descriptionZh-TW": "國民：第三級警告（非必要勿前往）\n14天內有該國旅遊史者(不含轉機)，入境後需居家檢疫14天。\n\n指揮中心指出，伊朗確定病例數已達593例，43例死亡，為中國以外死亡病例數最多之國家，評估已有社區傳播；該國已輸出上百例病例至全球17國。\n\n因應國際武漢肺炎疫情發展，指揮中心目前已將中國大陸(含港澳)、韓國、義大利、伊朗列為旅遊疫情建議第三級警告；日本、新加坡列第二級警示；泰國列第一級注意。指揮中心將嚴密監控疫情變化，隨時調整防治策略及旅遊疫情建議等級。",
-            "titleEn": "",
-            "descriptionEn": "",
-            "titleJp": "",
-            "descriptionJp": "",
-            "titleKr": "",
-            "descriptionKr": ""
-        },
-        "IT": {
-            "homeCountry": "台灣 Taiwan",
-            "homeCountryCode": "TW",
-            "targetCountry": "意大利 Italy",
-            "targetCountryCode": "IT",
-            "type": "advisory",
-            "source": "衛生福利部疾病管制署",
-            "sourceUrl": "https:\/\/www.roc-taiwan.org\/us\/post\/7986.html",
-            "startDate": "2020\/03\/02",
-            "endDate": "",
-            "titleZh-TW": "國民：第三級警告，非必要勿前往",
-            "descriptionZh-TW": "義大利旅遊疫情升至第三級警告（非必要勿前往），入境需居家檢疫14天\n中央流行疫情指揮中心今(27)日表示，義大利近期COVID-19(武漢肺炎)病例數及死亡病例快速增加，鑒於國人至當地感染的風險提高，指揮中心宣布今日起提升義大利旅遊疫情建議至第三級：警告(Warning)，提醒民眾非必要勿前往。此外，指揮中心亦同時宣布，自台灣時間2月28日零時起，所有旅客（包含外籍人士）自義大利入境（轉機除外），需進行14天居家檢疫。\n\n指揮中心指出，義大利目前確定病例數已達400例，12例死亡，病例擴及9個大區，且逾9成病例目前尚未釐清感染源，評估已有社區傳播，並已輸出病例至法國、北馬其頓、希臘、巴西、西班牙、瑞士、阿爾及利亞、克羅埃西亞、奧地利及德國共10國計18例。義大利已宣布對發生不明感染源個案之城市或地區採取停班停課、暫停公眾活動、限制交通等防治措施。\n",
+            "titleZh-TW": "國民：第三級警告（非必要勿前往）\n轉機得入境者，需居家檢疫14天：部分機場暫停航班\n14日內曾經入境或居住於香的外籍人士：暫緩入境",
+            "descriptionZh-TW": "國民：第三級警告（非必要勿前往）\n外籍人士只要14日內曾經入境或居住於香港，暫緩入境我國。\n即使有特殊原因，我駐外館處也不再受理簽證申請。\n持我國有效居留證而擬返臺的外籍人士：\n14日內曾經入境或居住於香港，返臺之後將限制居住，14日的「居家檢疫」\n轉機入境臺灣者：14日的「居家檢疫」",
             "titleEn": "",
             "descriptionEn": "",
             "titleJp": "",
@@ -368,6 +908,65 @@
             "titleKr": "",
             "descriptionKr": ""
         },
+        "KZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Kazakhstan",
+            "targetCountryCode": "KZ",
+            "type": "restricted",
+            "titleZh-TW": "哈薩克",
+            "descriptionZh-TW": ""
+        },
+        "KP": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Korea, North",
+            "targetCountryCode": "KP",
+            "type": "advisory",
+            "titleZh-TW": "北韓",
+            "descriptionZh-TW": ""
+        },
+        "KR": {
+            "homeCountry": "台灣 Taiwan",
+            "homeCountryCode": "TW",
+            "targetCountry": "韓國",
+            "targetCountryCode": "KR",
+            "type": "restricted",
+            "source": "",
+            "sourceUrl": "",
+            "startDate": "2020\/03\/02",
+            "endDate": "",
+            "titleZh-TW": "第三級警告（非必要勿前往）",
+            "descriptionZh-TW": "",
+            "titleEn": "",
+            "descriptionEn": "",
+            "titleJp": "",
+            "descriptionJp": "",
+            "titleKr": "",
+            "descriptionKr": ""
+        },
+        "KG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Kyrgyzstan",
+            "targetCountryCode": "KG",
+            "type": "restricted",
+            "titleZh-TW": "吉爾吉斯",
+            "descriptionZh-TW": ""
+        },
+        "MO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Macao",
+            "targetCountryCode": "MO",
+            "type": "restricted",
+            "titleZh-TW": "澳門",
+            "descriptionZh-TW": ""
+        },
+        "MN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Mongolia",
+            "targetCountryCode": "MN",
+            "type": "restricted",
+            "titleZh-TW": "蒙古",
+            "descriptionZh-TW": ""
+        },
         "SG": {
             "homeCountry": "台灣 Taiwan",
             "homeCountryCode": "TW",
@@ -386,6 +985,118 @@
             "descriptionJp": "",
             "titleKr": "",
             "descriptionKr": ""
+        },
+        "TJ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Tajikistan",
+            "targetCountryCode": "TJ",
+            "type": "restricted",
+            "titleZh-TW": "塔吉克",
+            "descriptionZh-TW": ""
+        },
+        "TM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Turkmenistan",
+            "targetCountryCode": "TM",
+            "type": "restricted",
+            "titleZh-TW": "土庫曼",
+            "descriptionZh-TW": ""
+        },
+        "UZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Uzbekistan",
+            "targetCountryCode": "UZ",
+            "type": "restricted",
+            "titleZh-TW": "烏茲別克",
+            "descriptionZh-TW": ""
+        },
+        "BD": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Bangladesh",
+            "targetCountryCode": "BD",
+            "type": "advisory",
+            "titleZh-TW": "孟加拉",
+            "descriptionZh-TW": ""
+        },
+        "BT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Bhutan",
+            "targetCountryCode": "BT",
+            "type": "advisory",
+            "titleZh-TW": "不丹",
+            "descriptionZh-TW": ""
+        },
+        "KH": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Cambodia",
+            "targetCountryCode": "KH",
+            "type": "advisory",
+            "titleZh-TW": "柬埔寨",
+            "descriptionZh-TW": ""
+        },
+        "IN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "India",
+            "targetCountryCode": "IN",
+            "type": "advisory",
+            "titleZh-TW": "印度",
+            "descriptionZh-TW": ""
+        },
+        "ID": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Indonesia",
+            "targetCountryCode": "ID",
+            "type": "advisory",
+            "titleZh-TW": "印尼",
+            "descriptionZh-TW": ""
+        },
+        "LA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Lao PDR",
+            "targetCountryCode": "LA",
+            "type": "advisory",
+            "titleZh-TW": "寮國",
+            "descriptionZh-TW": ""
+        },
+        "MY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Malaysia",
+            "targetCountryCode": "MY",
+            "type": "advisory",
+            "titleZh-TW": "馬來西亞",
+            "descriptionZh-TW": ""
+        },
+        "MM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Myanmar",
+            "targetCountryCode": "MM",
+            "type": "advisory",
+            "titleZh-TW": "緬甸",
+            "descriptionZh-TW": ""
+        },
+        "NP": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Nepal",
+            "targetCountryCode": "NP",
+            "type": "advisory",
+            "titleZh-TW": "尼泊爾",
+            "descriptionZh-TW": ""
+        },
+        "PH": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Philippines",
+            "targetCountryCode": "PH",
+            "type": "advisory",
+            "titleZh-TW": "菲律賓",
+            "descriptionZh-TW": ""
+        },
+        "LK": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Sri Lanka",
+            "targetCountryCode": "LK",
+            "type": "advisory",
+            "titleZh-TW": "斯里蘭卡",
+            "descriptionZh-TW": ""
         },
         "TH": {
             "homeCountry": "台灣 Taiwan",
@@ -406,24 +1117,819 @@
             "titleKr": "",
             "descriptionKr": ""
         },
-        "KR": {
+        "TL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Timor-Leste",
+            "targetCountryCode": "TL",
+            "type": "advisory",
+            "titleZh-TW": "東帝汶",
+            "descriptionZh-TW": ""
+        },
+        "VN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Vietnam",
+            "targetCountryCode": "VN",
+            "type": "advisory",
+            "titleZh-TW": "越南",
+            "descriptionZh-TW": ""
+        },
+        "AL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Albania",
+            "targetCountryCode": "AL",
+            "type": "restricted",
+            "titleZh-TW": "阿爾巴尼亞",
+            "descriptionZh-TW": ""
+        },
+        "AD": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Andorra",
+            "targetCountryCode": "AD",
+            "type": "advisory",
+            "titleZh-TW": "安道爾",
+            "descriptionZh-TW": ""
+        },
+        "AT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Austria",
+            "targetCountryCode": "AT",
+            "type": "restricted",
+            "titleZh-TW": "奧地利",
+            "descriptionZh-TW": ""
+        },
+        "BY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Belarus",
+            "targetCountryCode": "BY",
+            "type": "restricted",
+            "titleZh-TW": "白俄羅斯",
+            "descriptionZh-TW": ""
+        },
+        "BE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Belgium",
+            "targetCountryCode": "BE",
+            "type": "restricted",
+            "titleZh-TW": "比利時",
+            "descriptionZh-TW": ""
+        },
+        "BA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Bosnia and Herzegovina",
+            "targetCountryCode": "BA",
+            "type": "restricted",
+            "titleZh-TW": "波士尼亞與赫塞哥維納",
+            "descriptionZh-TW": ""
+        },
+        "BG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Bulgaria",
+            "targetCountryCode": "BG",
+            "type": "restricted",
+            "titleZh-TW": "保加利亞",
+            "descriptionZh-TW": ""
+        },
+        "HR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Croatia",
+            "targetCountryCode": "HR",
+            "type": "restricted",
+            "titleZh-TW": "克羅埃西亞",
+            "descriptionZh-TW": ""
+        },
+        "CY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Cyprus",
+            "targetCountryCode": "CY",
+            "type": "restricted",
+            "titleZh-TW": "賽普勒斯",
+            "descriptionZh-TW": ""
+        },
+        "CZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Czech Republic",
+            "targetCountryCode": "CZ",
+            "type": "restricted",
+            "titleZh-TW": "捷克共和國",
+            "descriptionZh-TW": ""
+        },
+        "DK": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Denmark",
+            "targetCountryCode": "DK",
+            "type": "restricted",
+            "titleZh-TW": "丹麥",
+            "descriptionZh-TW": ""
+        },
+        "EE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Estonia",
+            "targetCountryCode": "EE",
+            "type": "restricted",
+            "titleZh-TW": "愛沙尼亞",
+            "descriptionZh-TW": ""
+        },
+        "FI": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Finland",
+            "targetCountryCode": "FI",
+            "type": "restricted",
+            "titleZh-TW": "芬蘭",
+            "descriptionZh-TW": ""
+        },
+        "FR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "France",
+            "targetCountryCode": "FR",
+            "type": "restricted",
+            "titleZh-TW": "法國",
+            "descriptionZh-TW": ""
+        },
+        "DE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Germany",
+            "targetCountryCode": "DE",
+            "type": "restricted",
+            "titleZh-TW": "德國",
+            "descriptionZh-TW": ""
+        },
+        "GR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Greece",
+            "targetCountryCode": "GR",
+            "type": "restricted",
+            "titleZh-TW": "希臘",
+            "descriptionZh-TW": ""
+        },
+        "HU": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Hungary",
+            "targetCountryCode": "HU",
+            "type": "restricted",
+            "titleZh-TW": "匈牙利",
+            "descriptionZh-TW": ""
+        },
+        "IS": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Iceland",
+            "targetCountryCode": "IS",
+            "type": "restricted",
+            "titleZh-TW": "冰島",
+            "descriptionZh-TW": ""
+        },
+        "IE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Ireland",
+            "targetCountryCode": "IE",
+            "type": "restricted",
+            "titleZh-TW": "愛爾蘭",
+            "descriptionZh-TW": ""
+        },
+        "IT": {
             "homeCountry": "台灣 Taiwan",
             "homeCountryCode": "TW",
-            "targetCountry": "韓國",
-            "targetCountryCode": "KR",
-            "type": "restricted",
-            "source": "",
-            "sourceUrl": "",
+            "targetCountry": "意大利 Italy",
+            "targetCountryCode": "IT",
+            "type": "advisory",
+            "source": "衛生福利部疾病管制署",
+            "sourceUrl": "https:\/\/www.roc-taiwan.org\/us\/post\/7986.html",
             "startDate": "2020\/03\/02",
             "endDate": "",
-            "titleZh-TW": "第三級警告（非必要勿前往）",
-            "descriptionZh-TW": "",
+            "titleZh-TW": "國民：第三級警告，非必要勿前往",
+            "descriptionZh-TW": "義大利旅遊疫情升至第三級警告（非必要勿前往），入境需居家檢疫14天\n中央流行疫情指揮中心今(27)日表示，義大利近期COVID-19(武漢肺炎)病例數及死亡病例快速增加，鑒於國人至當地感染的風險提高，指揮中心宣布今日起提升義大利旅遊疫情建議至第三級：警告(Warning)，提醒民眾非必要勿前往。此外，指揮中心亦同時宣布，自台灣時間2月28日零時起，所有旅客（包含外籍人士）自義大利入境（轉機除外），需進行14天居家檢疫。\n\n指揮中心指出，義大利目前確定病例數已達400例，12例死亡，病例擴及9個大區，且逾9成病例目前尚未釐清感染源，評估已有社區傳播，並已輸出病例至法國、北馬其頓、希臘、巴西、西班牙、瑞士、阿爾及利亞、克羅埃西亞、奧地利及德國共10國計18例。義大利已宣布對發生不明感染源個案之城市或地區採取停班停課、暫停公眾活動、限制交通等防治措施。\n",
             "titleEn": "",
             "descriptionEn": "",
             "titleJp": "",
             "descriptionJp": "",
             "titleKr": "",
             "descriptionKr": ""
+        },
+        "XK": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Kosovo",
+            "targetCountryCode": "XK",
+            "type": "restricted",
+            "titleZh-TW": "科索沃",
+            "descriptionZh-TW": ""
+        },
+        "LV": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Latvia",
+            "targetCountryCode": "LV",
+            "type": "restricted",
+            "titleZh-TW": "拉脫維亞",
+            "descriptionZh-TW": ""
+        },
+        "LI": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Liechtenstein",
+            "targetCountryCode": "LI",
+            "type": "restricted",
+            "titleZh-TW": "列支敦斯登",
+            "descriptionZh-TW": ""
+        },
+        "LT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Lithuania",
+            "targetCountryCode": "LT",
+            "type": "restricted",
+            "titleZh-TW": "立陶宛",
+            "descriptionZh-TW": ""
+        },
+        "LU": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Luxembourg",
+            "targetCountryCode": "LU",
+            "type": "restricted",
+            "titleZh-TW": "盧森堡",
+            "descriptionZh-TW": ""
+        },
+        "MT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Malta",
+            "targetCountryCode": "MT",
+            "type": "restricted",
+            "titleZh-TW": "馬爾他",
+            "descriptionZh-TW": ""
+        },
+        "ME": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Montenegro",
+            "targetCountryCode": "ME",
+            "type": "restricted",
+            "titleZh-TW": "蒙特內哥羅",
+            "descriptionZh-TW": ""
+        },
+        "NL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Netherlands",
+            "targetCountryCode": "NL",
+            "type": "restricted",
+            "titleZh-TW": "荷蘭",
+            "descriptionZh-TW": ""
+        },
+        "MK": {
+            "homeCountryCode": "TW",
+            "targetCountry": "North Macedonia",
+            "targetCountryCode": "MK",
+            "type": "restricted",
+            "titleZh-TW": "北馬其頓",
+            "descriptionZh-TW": ""
+        },
+        "NO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Norway",
+            "targetCountryCode": "NO",
+            "type": "restricted",
+            "titleZh-TW": "挪威",
+            "descriptionZh-TW": ""
+        },
+        "PL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Poland",
+            "targetCountryCode": "PL",
+            "type": "restricted",
+            "titleZh-TW": "波蘭",
+            "descriptionZh-TW": ""
+        },
+        "PT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Portugal",
+            "targetCountryCode": "PT",
+            "type": "restricted",
+            "titleZh-TW": "葡萄牙",
+            "descriptionZh-TW": ""
+        },
+        "RO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Romania",
+            "targetCountryCode": "RO",
+            "type": "restricted",
+            "titleZh-TW": "羅馬尼亞",
+            "descriptionZh-TW": ""
+        },
+        "RU": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Russia",
+            "targetCountryCode": "RU",
+            "type": "restricted",
+            "titleZh-TW": "俄羅斯",
+            "descriptionZh-TW": ""
+        },
+        "RS": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Serbia",
+            "targetCountryCode": "RS",
+            "type": "restricted",
+            "titleZh-TW": "塞爾維亞",
+            "descriptionZh-TW": ""
+        },
+        "SK": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Slovakia",
+            "targetCountryCode": "SK",
+            "type": "restricted",
+            "titleZh-TW": "斯洛伐克",
+            "descriptionZh-TW": ""
+        },
+        "SI": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Slovenia",
+            "targetCountryCode": "SI",
+            "type": "restricted",
+            "titleZh-TW": "斯洛維尼亞",
+            "descriptionZh-TW": ""
+        },
+        "ES": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Spain",
+            "targetCountryCode": "ES",
+            "type": "restricted",
+            "titleZh-TW": "西班牙",
+            "descriptionZh-TW": ""
+        },
+        "SE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Sweden",
+            "targetCountryCode": "SE",
+            "type": "restricted",
+            "titleZh-TW": "瑞典",
+            "descriptionZh-TW": ""
+        },
+        "CH": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Switzerland",
+            "targetCountryCode": "CH",
+            "type": "restricted",
+            "titleZh-TW": "瑞士",
+            "descriptionZh-TW": ""
+        },
+        "UA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Ukraine",
+            "targetCountryCode": "UA",
+            "type": "restricted",
+            "titleZh-TW": "烏克蘭",
+            "descriptionZh-TW": ""
+        },
+        "GB": {
+            "homeCountryCode": "TW",
+            "targetCountry": "United Kingdom",
+            "targetCountryCode": "GB",
+            "type": "restricted",
+            "titleZh-TW": "英國",
+            "descriptionZh-TW": ""
+        },
+        "AF": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Afghanistan",
+            "targetCountryCode": "AF",
+            "type": "restricted",
+            "titleZh-TW": "阿富汗",
+            "descriptionZh-TW": ""
+        },
+        "BH": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Bahrain",
+            "targetCountryCode": "BH",
+            "type": "restricted",
+            "titleZh-TW": "巴林",
+            "descriptionZh-TW": ""
+        },
+        "IR": {
+            "homeCountry": "台灣 Taiwan",
+            "homeCountryCode": "TW",
+            "targetCountry": "伊朗",
+            "targetCountryCode": "IR",
+            "type": "restricted",
+            "source": "衛生福利部疾病管制署",
+            "sourceUrl": "https:\/\/www.roc-taiwan.org\/us\/post\/7986.html",
+            "startDate": "2020\/03\/02",
+            "endDate": "",
+            "titleZh-TW": "國民：第三級警告，非必要勿前往",
+            "descriptionZh-TW": "國民：第三級警告（非必要勿前往）\n14天內有該國旅遊史者(不含轉機)，入境後需居家檢疫14天。\n\n指揮中心指出，伊朗確定病例數已達593例，43例死亡，為中國以外死亡病例數最多之國家，評估已有社區傳播；該國已輸出上百例病例至全球17國。\n\n因應國際武漢肺炎疫情發展，指揮中心目前已將中國大陸(含港澳)、韓國、義大利、伊朗列為旅遊疫情建議第三級警告；日本、新加坡列第二級警示；泰國列第一級注意。指揮中心將嚴密監控疫情變化，隨時調整防治策略及旅遊疫情建議等級。",
+            "titleEn": "",
+            "descriptionEn": "",
+            "titleJp": "",
+            "descriptionJp": "",
+            "titleKr": "",
+            "descriptionKr": ""
+        },
+        "IQ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Iraq",
+            "targetCountryCode": "IQ",
+            "type": "restricted",
+            "titleZh-TW": "伊拉克",
+            "descriptionZh-TW": ""
+        },
+        "IL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Israel",
+            "targetCountryCode": "IL",
+            "type": "restricted",
+            "titleZh-TW": "以色列",
+            "descriptionZh-TW": ""
+        },
+        "JO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Jordan",
+            "targetCountryCode": "JO",
+            "type": "restricted",
+            "titleZh-TW": "約旦",
+            "descriptionZh-TW": ""
+        },
+        "KW": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Kuwait",
+            "targetCountryCode": "KW",
+            "type": "restricted",
+            "titleZh-TW": "科威特",
+            "descriptionZh-TW": ""
+        },
+        "LB": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Lebanon",
+            "targetCountryCode": "LB",
+            "type": "restricted",
+            "titleZh-TW": "黎巴嫩",
+            "descriptionZh-TW": ""
+        },
+        "OM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Oman",
+            "targetCountryCode": "OM",
+            "type": "restricted",
+            "titleZh-TW": "阿曼",
+            "descriptionZh-TW": ""
+        },
+        "PK": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Pakistan",
+            "targetCountryCode": "PK",
+            "type": "restricted",
+            "titleZh-TW": "巴基斯坦",
+            "descriptionZh-TW": ""
+        },
+        "PS": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Palestine",
+            "targetCountryCode": "PS",
+            "type": "restricted",
+            "titleZh-TW": "巴勒斯坦",
+            "descriptionZh-TW": ""
+        },
+        "QA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Qatar",
+            "targetCountryCode": "QA",
+            "type": "restricted",
+            "titleZh-TW": "卡達",
+            "descriptionZh-TW": ""
+        },
+        "SA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Saudi Arabia",
+            "targetCountryCode": "SA",
+            "type": "restricted",
+            "titleZh-TW": "沙烏地阿拉伯",
+            "descriptionZh-TW": ""
+        },
+        "SY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Syria",
+            "targetCountryCode": "SY",
+            "type": "restricted",
+            "titleZh-TW": "敘利亞",
+            "descriptionZh-TW": ""
+        },
+        "TR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Turkey",
+            "targetCountryCode": "TR",
+            "type": "restricted",
+            "titleZh-TW": "土耳其",
+            "descriptionZh-TW": ""
+        },
+        "AE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "United Arab Emirates",
+            "targetCountryCode": "AE",
+            "type": "restricted",
+            "titleZh-TW": "阿拉伯聯合大公國",
+            "descriptionZh-TW": ""
+        },
+        "YE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Yemen",
+            "targetCountryCode": "YE",
+            "type": "restricted",
+            "titleZh-TW": "葉門",
+            "descriptionZh-TW": ""
+        },
+        "AU": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Australia",
+            "targetCountryCode": "AU",
+            "type": "advisory",
+            "titleZh-TW": "澳洲",
+            "descriptionZh-TW": ""
+        },
+        "FJ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Fiji",
+            "targetCountryCode": "FJ",
+            "type": "advisory",
+            "titleZh-TW": "斐濟",
+            "descriptionZh-TW": ""
+        },
+        "KI": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Kiribati",
+            "targetCountryCode": "KI",
+            "type": "advisory",
+            "titleZh-TW": "吉里巴斯",
+            "descriptionZh-TW": ""
+        },
+        "MH": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Marshall Islands",
+            "targetCountryCode": "MH",
+            "type": "advisory",
+            "titleZh-TW": "馬紹爾群島",
+            "descriptionZh-TW": ""
+        },
+        "FM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Micronesia",
+            "targetCountryCode": "FM",
+            "type": "advisory",
+            "titleZh-TW": "密克羅尼西亞",
+            "descriptionZh-TW": ""
+        },
+        "NR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Nauru",
+            "targetCountryCode": "NR",
+            "type": "advisory",
+            "titleZh-TW": "諾魯",
+            "descriptionZh-TW": ""
+        },
+        "NZ": {
+            "homeCountryCode": "TW",
+            "targetCountry": "New Zealand",
+            "targetCountryCode": "NZ",
+            "type": "advisory",
+            "titleZh-TW": "紐西蘭",
+            "descriptionZh-TW": ""
+        },
+        "PW": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Palau",
+            "targetCountryCode": "PW",
+            "type": "advisory",
+            "titleZh-TW": "帛琉",
+            "descriptionZh-TW": ""
+        },
+        "WS": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Samoa",
+            "targetCountryCode": "WS",
+            "type": "advisory",
+            "titleZh-TW": "薩摩亞",
+            "descriptionZh-TW": ""
+        },
+        "SB": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Solomon Islands",
+            "targetCountryCode": "SB",
+            "type": "restricted",
+            "titleZh-TW": "所羅門群島",
+            "descriptionZh-TW": ""
+        },
+        "TO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Tonga",
+            "targetCountryCode": "TO",
+            "type": "advisory",
+            "titleZh-TW": "東加",
+            "descriptionZh-TW": ""
+        },
+        "TV": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Tuvalu",
+            "targetCountryCode": "TV",
+            "type": "advisory",
+            "titleZh-TW": "吐瓦魯",
+            "descriptionZh-TW": ""
+        },
+        "VU": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Vanuatu",
+            "targetCountryCode": "VU",
+            "type": "advisory",
+            "titleZh-TW": "萬那杜",
+            "descriptionZh-TW": ""
+        },
+        "AG": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Antigua and Barb.",
+            "targetCountryCode": "AG",
+            "type": "advisory",
+            "titleZh-TW": "安地卡及巴布達",
+            "descriptionZh-TW": ""
+        },
+        "AR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Argentina",
+            "targetCountryCode": "AR",
+            "type": "advisory",
+            "titleZh-TW": "阿根廷",
+            "descriptionZh-TW": ""
+        },
+        "BO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Bolivia",
+            "targetCountryCode": "BO",
+            "type": "advisory",
+            "titleZh-TW": "玻利維亞",
+            "descriptionZh-TW": ""
+        },
+        "BR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Brazil",
+            "targetCountryCode": "BR",
+            "type": "advisory",
+            "titleZh-TW": "巴西",
+            "descriptionZh-TW": ""
+        },
+        "CL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Chile",
+            "targetCountryCode": "CL",
+            "type": "advisory",
+            "titleZh-TW": "智利",
+            "descriptionZh-TW": ""
+        },
+        "CO": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Colombia",
+            "targetCountryCode": "CO",
+            "type": "advisory",
+            "titleZh-TW": "哥倫比亞",
+            "descriptionZh-TW": ""
+        },
+        "EC": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Ecuador",
+            "targetCountryCode": "EC",
+            "type": "advisory",
+            "titleZh-TW": "厄瓜多",
+            "descriptionZh-TW": ""
+        },
+        "FK": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Falkland Islands",
+            "targetCountryCode": "FK",
+            "type": "advisory",
+            "titleZh-TW": "福克蘭群島",
+            "descriptionZh-TW": ""
+        },
+        "GY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Guyana",
+            "targetCountryCode": "GY",
+            "type": "advisory",
+            "titleZh-TW": "蓋亞那",
+            "descriptionZh-TW": ""
+        },
+        "PY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Paraguay",
+            "targetCountryCode": "PY",
+            "type": "advisory",
+            "titleZh-TW": "巴拉圭",
+            "descriptionZh-TW": ""
+        },
+        "PE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Peru",
+            "targetCountryCode": "PE",
+            "type": "advisory",
+            "titleZh-TW": "秘魯",
+            "descriptionZh-TW": ""
+        },
+        "SR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Suriname",
+            "targetCountryCode": "SR",
+            "type": "advisory",
+            "titleZh-TW": "蘇利南",
+            "descriptionZh-TW": ""
+        },
+        "UY": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Uruguay",
+            "targetCountryCode": "UY",
+            "type": "advisory",
+            "titleZh-TW": "烏拉圭",
+            "descriptionZh-TW": ""
+        },
+        "VE": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Venezuela",
+            "targetCountryCode": "VE",
+            "type": "advisory",
+            "titleZh-TW": "委內瑞拉",
+            "descriptionZh-TW": ""
+        },
+        "BN": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Brunei",
+            "targetCountryCode": "BN",
+            "type": "advisory",
+            "titleZh-TW": "汶萊",
+            "descriptionZh-TW": ""
+        },
+        "GH": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Ghana",
+            "targetCountryCode": "GH",
+            "type": "advisory",
+            "titleZh-TW": "迦納",
+            "descriptionZh-TW": ""
+        },
+        "GL": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Greenland",
+            "targetCountryCode": "GL",
+            "type": "advisory",
+            "titleZh-TW": "格陵蘭",
+            "descriptionZh-TW": ""
+        },
+        "HT": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Haiti",
+            "targetCountryCode": "HT",
+            "type": "advisory",
+            "titleZh-TW": "海地",
+            "descriptionZh-TW": ""
+        },
+        "MD": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Moldova",
+            "targetCountryCode": "MD",
+            "type": "advisory",
+            "titleZh-TW": "摩爾多瓦",
+            "descriptionZh-TW": ""
+        },
+        "MC": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Monaco",
+            "targetCountryCode": "MC",
+            "type": "advisory",
+            "titleZh-TW": "摩納哥",
+            "descriptionZh-TW": ""
+        },
+        "PR": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Puerto Rico",
+            "targetCountryCode": "PR",
+            "type": "advisory",
+            "titleZh-TW": "波多黎各",
+            "descriptionZh-TW": ""
+        },
+        "SM": {
+            "homeCountryCode": "TW",
+            "targetCountry": "San Marino",
+            "targetCountryCode": "SM",
+            "type": "advisory",
+            "titleZh-TW": "聖馬利諾",
+            "descriptionZh-TW": ""
+        },
+        "TW": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Taiwan",
+            "targetCountryCode": "TW",
+            "type": "",
+            "titleZh-TW": "台灣",
+            "descriptionZh-TW": ""
+        },
+        "VA": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Vatican",
+            "targetCountryCode": "VA",
+            "type": "advisory",
+            "titleZh-TW": "梵蒂岡",
+            "descriptionZh-TW": ""
+        },
+        "EH": {
+            "homeCountryCode": "TW",
+            "targetCountry": "Western Sahara",
+            "targetCountryCode": "EH",
+            "type": "advisory",
+            "titleZh-TW": "西撒哈拉",
+            "descriptionZh-TW": ""
         }
     },
     "JP": {
