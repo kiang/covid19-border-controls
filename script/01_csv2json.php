@@ -67,7 +67,7 @@ foreach($twJson AS $alert) {
 $fh = fopen($basePath . '/data/data.csv', 'r');
 $header = fgetcsv($fh, 2048);
 while($line = fgetcsv($fh, 2048)) {
-    if(isset($pool[$line[1]])) {
+    if(isset($pool[$line[1]]) && !isset($pool[$line[1]][$line[3]])) {
         $pool[$line[1]][$line[3]] = array_combine($header, $line);
     }
 }
